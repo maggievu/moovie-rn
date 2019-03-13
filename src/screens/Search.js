@@ -124,6 +124,7 @@ class Search extends Component {
 									overview={item["overview"]}
 								/>
 							}
+							keyExtractor={(item, index) => index.toString()}
 						/>
 					}
 				</View>
