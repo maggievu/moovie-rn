@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Moovie",
-    "slug": "movie-app-rn",
+    "slug": "moovie-app-rn",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "A React Native app that fetches movies and related info from https://www.themoviedb.org/",
+    "githubUrl": "https://github.com/maggievu/moovie-rn.git"
   }
 }
