@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
 		marginRight: 10,
 	},
 	tabStyle: {
-		marginTop: 150,
+		marginTop: 140,
 		borderColor: '#13bcd4',
 	},
 	list: {

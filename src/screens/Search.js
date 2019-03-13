@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'flex-start',
 	},
 	tabStyle: {
-		marginTop: 150,
+		marginTop: 140,
 		borderColor: '#13bcd4',
 	},
 	text: {
