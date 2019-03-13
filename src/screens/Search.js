@@ -115,7 +115,6 @@ class Search extends Component {
 						<FlatList
 							style={styles.list}
 							data={results}
-							// extraData={reload}
 							renderItem={({ item }) => 
 								<MovieInList 
 									poster={item["poster_path"]}
