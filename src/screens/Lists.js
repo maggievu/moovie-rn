@@ -70,7 +70,7 @@ class Lists extends Component {
 					{hasData &&
 						<FlatList
 							style={styles.list}
-							data={results}
+							data={results.splice(0, 10)}
 							renderItem={({ item }) =>
 								<MovieInList
 									poster={item["poster_path"]}

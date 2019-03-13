@@ -17,14 +17,14 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		paddingTop: 30,
 		width: '100%',
-		height: 120,
+		height: 110,
 		backgroundColor: '#13bcd4',
 	},
 	title: {
 		color: 'white',
-		fontSize: 30,
+		fontSize: 25,
 		fontWeight: 'bold',
-		marginBottom: 10,
+		marginBottom: 5,
 	},
 	subtitle: {
 		color: 'white',

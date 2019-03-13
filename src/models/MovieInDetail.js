@@ -2,10 +2,6 @@ import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import imgPlaceholder from '../assets/img-placeholder-detail.png'
 
-const source = (props) => {
-	props.poster ? { uri: "https://image.tmdb.org/t/p/original" + props.poster } : imgPlaceholder
-}
-
 const MovieInDetail = (props) => (
 	<View style={styles.container}>
 		<Image
@@ -25,7 +21,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		justifyContent: 'flex-start',
-		marginTop: 140,
+		marginTop: 130,
 		marginLeft: 10,
 		marginRight: 10,
 	},

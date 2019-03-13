@@ -40,7 +40,9 @@ class Search extends Component {
 	}
 
 	fetchData = async () => {
-		await this.fetchMovieData()
+		if (this.state.query !== '') {
+			await this.fetchMovieData()
+		}
 	}
 	
 	fetchMovieData = async () => {
@@ -114,7 +116,7 @@ class Search extends Component {
 					{hasData &&
 						<FlatList
 							style={styles.list}
-							data={results}
+							data={results.length > 10 ? results.splice(0,10) : results}
 							renderItem={({ item }) => 
 								<MovieInList 
 									poster={item["poster_path"]}
