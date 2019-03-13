@@ -2,21 +2,17 @@ import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import imgPlaceholder from '../assets/img-placeholder-detail.png'
 
+const source = (props) => {
+	props.poster ? { uri: "https://image.tmdb.org/t/p/original" + props.poster } : imgPlaceholder
+}
+
 const MovieInDetail = (props) => (
 	<View style={styles.container}>
-		{props.poster &&
-			<Image
-				style={styles.image}
-				source={{ uri: "https://image.tmdb.org/t/p/original" + props.poster }}
-			/>
-		}
+		<Image
+			style={styles.image}
+			source={props.poster ? { uri: "https://image.tmdb.org/t/p/original" + props.poster } : imgPlaceholder}
+		/>
 
-		{!props.poster &&
-			<Image
-				style={styles.image}
-				source={imgPlaceholder}
-			/>
-		}
 		<Text style={styles.title}>{props.title}</Text>
 		<Text>Popularity: {props.popularity}</Text>
 		<Text>Released on: {props.releaseDate}</Text>

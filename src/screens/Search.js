@@ -3,9 +3,9 @@ import { StyleSheet, Text, View, FlatList } from 'react-native'
 import SegmentedControlTab from 'react-native-segmented-control-tab'
 import Form from '../components/Form'
 import MovieInList from '../models/MovieInList'
-import Header from '../components/Header';
+import Header from '../components/Header'
+import API_KEY from '../api_key'
 
-const API_KEY = '8367b1854dccedcfc9001204de735470'
 const keywords = ['movie', 'person', 'tv']
 const values = ['movies', 'people', 'tv show']
 

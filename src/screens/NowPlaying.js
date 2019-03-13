@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, ActivityIndicator } from 'react-native'
+import { StyleSheet, View, ActivityIndicator } from 'react-native'
 import MovieInDetail from '../models/MovieInDetail'
 import Header from '../components/Header';
-
-const API_KEY = '8367b1854dccedcfc9001204de735470'
+import API_KEY from '../api_key'
 
 class NowPlaying extends Component {
 	static navigationOptions = {
@@ -76,7 +75,7 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	colorLoading: {
-		color: "#0000ff",
+		color: "#555",
 	},
 })
 

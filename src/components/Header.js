@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Text, View, StyleSheet } from 'react-native'
 
 const Header = (props) => (
@@ -8,8 +7,6 @@ const Header = (props) => (
 		<Text style={styles.subtitle}>{props.headerTitle}</Text>
 	</View>
 )
-
-export default Header
 
 const styles = StyleSheet.create({
 	container: {
@@ -34,3 +31,5 @@ const styles = StyleSheet.create({
 		textTransform: 'uppercase',
 	},
 })
+
+export default Header

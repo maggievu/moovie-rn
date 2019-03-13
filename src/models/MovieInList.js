@@ -1,22 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import imgPlaceholder from '../assets/img-placeholder-list.png'
 
 const MovieInList = (props) => (
 	<View style={styles.container}>
-		{props.poster &&
-			<Image 
-				style={styles.image}
-				source={{ uri: "https://image.tmdb.org/t/p/original" + props.poster }} 
-			/>
-		}
-
-		{!props.poster &&
-			<Image 
-				style={styles.image}
-				source={imgPlaceholder}
-			/>
-		}
+		<Image
+			style={styles.image}
+			source={ props.poster ? { uri: "https://image.tmdb.org/t/p/original" + props.poster } : imgPlaceholder }
+		/>
 
 		<View style={styles.textContainer}>
 			<Text style={styles.title}>{props.title}</Text>

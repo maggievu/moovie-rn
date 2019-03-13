@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { TextInput, View, StyleSheet } from 'react-native'
 
 const Form = (props) => (
@@ -12,8 +11,6 @@ const Form = (props) => (
 		/>
 	</View>
 )
-
-export default Form
 
 const styles = StyleSheet.create({
 	container: {
@@ -28,3 +25,5 @@ const styles = StyleSheet.create({
 		padding: 10,
 	}
 })
+
+export default Form
